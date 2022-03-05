@@ -16,7 +16,7 @@ const noise = (x) => {
 };
 const player = new (function () {
   this.reset = () => {
-    this.x = c.width / 2;
+    this.x = c.width / 9;
     this.y = 0;
     this.ySpeed = 0;
     this.rot = 0;

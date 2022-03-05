@@ -5,7 +5,7 @@ c.height = 750;
 document.body.appendChild(c);
 
 canvas {
-  background-image: url(https://some-image-here.jpg);
+  background-image: url(https://i.ibb.co/z8P76GF/download-20.jpg);
   /*...*/
 }
 

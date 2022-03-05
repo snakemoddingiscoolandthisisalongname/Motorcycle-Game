@@ -38,7 +38,7 @@ const player = new (function () {
       playing = false;
       this.rSpeed = 0;
       k.ArrowUp = 1;
-      this.x -= speed * 0;
+      this.x -= speed * 30;
     }
 
     const angle = Math.atan(p2 - 15 - this.y, 5);
@@ -49,7 +49,7 @@ const player = new (function () {
       this.rSpeed -= angle - this.rot;
     }
     this.rSpeed += (k.ArrowLeft - k.ArrowRight) * 0.05;
-    this.rot -= this.rSpeed * 0.07;
+    this.rot -= this.rSpeed * 1;
     if (this.rot > Math.PI) this.rot = -Math.PI;
     if (this.rot < -Math.PI) this.rot = Math.PI;
     ctx.save();

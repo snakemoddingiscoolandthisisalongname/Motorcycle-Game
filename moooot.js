@@ -1,6 +1,6 @@
 const c = document.createElement("canvas");
 const ctx = c.getContext("2d");
-c.width = 1300;
+c.width = 1550;
 c.height = 730;
 document.body.appendChild(c);
 
@@ -38,7 +38,7 @@ const player = new (function () {
       playing = false;
       this.rSpeed = 0;
       k.ArrowUp = 1;
-      this.x -= speed * 30;
+      this.x -= speed * 0;
     }
 
     const angle = Math.atan(p2 - 15 - this.y, 5);
@@ -48,7 +48,7 @@ const player = new (function () {
       this.rot -= (this.rot - angle) * 0.5;
       this.rSpeed -= angle - this.rot;
     }
-    this.rSpeed += (k.ArrowLeft - k.ArrowRight) * 0.05;
+    this.rSpeed += (k.ArrowLeft - k.ArrowRight) * 50;
     this.rot -= this.rSpeed * 0.1;
     if (this.rot > Math.PI) this.rot = -Math.PI;
     if (this.rot < -Math.PI) this.rot = Math.PI;

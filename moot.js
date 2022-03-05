@@ -1,6 +1,6 @@
 const c = document.createElement("canvas");
 const ctx = c.getContext("2d");
-c.width = 2000;
+c.width = 1300;
 c.height = 730;
 document.body.appendChild(c);
 
@@ -38,10 +38,10 @@ const player = new (function () {
       playing = false;
       this.rSpeed = 0;
       k.ArrowUp = 1;
-      this.x -= speed * 5;
+      this.x -= speed * 30;
     }
 
-    const angle = Math.atan(p2 - 15 - this.y, 1);
+    const angle = Math.atan(p2 - 15 - this.y, 5);
     this.y += this.ySpeed;
 
     if (grounded && playing) {

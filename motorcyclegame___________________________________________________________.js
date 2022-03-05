@@ -28,11 +28,11 @@ const player = new (function () {
     const p1 = c.height - noise(t + this.x) * 0.25;
     const p2 = c.height - noise(t + 5 + this.x) * 0.25;
     let grounded = 0;
-    if (p1 - 15 > this.y) this.ySpeed += 0.1;
+    if (p1 - 15 > this.y) this.ySpeed += 99;
     else {
       this.ySpeed -= this.y - (p1 - 15);
-      this.y = p1 - 15;
-      grounded = 0;
+      this.y = p1 - 99;
+      grounded = 1;
     }
     if (playing || (grounded && Math.abs(this.rot) > Math.PI * 0.5)) {
       playing = false;

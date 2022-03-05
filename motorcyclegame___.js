@@ -48,7 +48,7 @@ const player = new (function () {
       this.rot -= (this.rot - angle) * 0.5;
       this.rSpeed -= angle - this.rot;
     }
-    this.rSpeed += (k.ArrowLeft - k.ArrowRight) * 0.05;
+    this.rSpeed += (k.ArrowLeft - k.ArrowRight) * 0.02;
     this.rot -= this.rSpeed * 0.02;
     if (this.rot > Math.PI) this.rot = -Math.PI;
     if (this.rot < -Math.PI) this.rot = Math.PI;

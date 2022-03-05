@@ -26,7 +26,7 @@ const player = new (function () {
 
   this.reset();
   this.img = new Image();
-  this.img.src = "bike.png";
+  this.img.src = "https://i.ibb.co/ynrQGYY/istockphoto-966202612-612x612-removebg-preview.png";
   this.draw = function () {
     const p1 = c.height - noise(t + this.x) * 0.25;
     const p2 = c.height - noise(t + 5 + this.x) * 0.25;

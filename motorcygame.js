@@ -1,6 +1,6 @@
 const c = document.createElement("canvas");
 const ctx = c.getContext("2d");
-c.width = 1550;
+c.width = 1500;
 c.height = 730;
 document.body.appendChild(c);
 
@@ -48,8 +48,8 @@ const player = new (function () {
       this.rot -= (this.rot - angle) * 0.5;
       this.rSpeed -= angle - this.rot;
     }
-    this.rSpeed += (k.ArrowLeft - k.ArrowRight) * 0.009;
-    this.rot -= this.rSpeed * 0.1;
+    this.rSpeed += (k.ArrowLeft - k.ArrowRight) * 0.02;
+    this.rot -= this.rSpeed * 99;
     if (this.rot > Math.PI) this.rot = -Math.PI;
     if (this.rot < -Math.PI) this.rot = Math.PI;
     ctx.save();

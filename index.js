@@ -79,7 +79,7 @@ function loop() {
   ctx.fillStyle = "#19f";
   ctx.fillRect(0, 0, c.width, c.height);
 
-  ctx.fillStyle = "black";
+  ctx.fillStyle = "#654321";
   ctx.beginPath();
   ctx.moveTo(0, c.height);
   for (let i = 0; i < c.width; i++)

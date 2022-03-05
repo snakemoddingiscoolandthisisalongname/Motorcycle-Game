@@ -1,7 +1,11 @@
 const c = document.createElement("canvas");
 const ctx = c.getContext("2d");
-c.width = 1480;
+c.width = 1000;
 c.height = 730;
+    .coveringCanvas {
+    position: absolute;
+}
+
 document.body.appendChild(c);
 
 let perm = [];

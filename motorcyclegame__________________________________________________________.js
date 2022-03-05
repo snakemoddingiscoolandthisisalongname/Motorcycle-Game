@@ -32,7 +32,7 @@ const player = new (function () {
     else {
       this.ySpeed -= this.y - (p1 - 15);
       this.y = p1 - 15;
-      grounded = 0.6;
+      grounded = 0;
     }
     if (playing || (grounded && Math.abs(this.rot) > Math.PI * 0.5)) {
       playing = false;

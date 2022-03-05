@@ -1,7 +1,7 @@
 const c = document.createElement("canvas");
 const ctx = c.getContext("2d");
-c.width = 1000;
-c.height = 730;
+c.width = 1200;
+c.height = 720;
     .coveringCanvas {
     position: absolute;
 }

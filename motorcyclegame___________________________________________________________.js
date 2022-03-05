@@ -28,7 +28,7 @@ const player = new (function () {
     const p1 = c.height - noise(t + this.x) * 0.25;
     const p2 = c.height - noise(t + 5 + this.x) * 0.25;
     let grounded = 0;
-    if (p1 - 15 > this.y) this.ySpeed += 99;
+    if (p1 - 15 > this.y) this.ySpeed += 0.1;
     else {
       this.ySpeed -= this.y - (p1 - 15);
       this.y = p1 - 99;

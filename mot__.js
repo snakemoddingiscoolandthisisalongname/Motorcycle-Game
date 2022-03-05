@@ -1,8 +1,13 @@
 const c = document.createElement("canvas");
 const ctx = c.getContext("2d");
-c.width = 1000;
+c.width = 2000;
 c.height = 750;
 document.body.appendChild(c);
+
+canvas {
+  background-image: url(https://some-image-here.jpg);
+  /*...*/
+}
 
 let perm = [];
 while (perm.length < 255) {
@@ -47,7 +52,7 @@ const player = new (function () {
       this.x -= speed * 5;
     }
 
-    const angle = Math.atan(p2 - 15 - this.y, 5);
+    const angle = Math.atan(p2 - 15 - this.y, 1);
     this.y += this.ySpeed;
 
     if (grounded && playing) {

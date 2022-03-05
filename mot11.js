@@ -73,17 +73,6 @@ const player = new (function () {
   };
 })();
 
-let t = 0;
-let speed = 0;
-let playing = true;
-const k = { ArrowUp: 0, ArrowDown: 0, ArrowLeft: 0, ArrowRight: 0 };
-function loop() {
-  if (player.x < 0) player.reset();
-  speed -= (speed - (k.ArrowUp - k.ArrowDown)) * 0.01;
-  t += 10 * speed;
-  ctx.fillStyle = "#19f";
-  ctx.fillRect(0, 0, c.width, c.height);
-
   ctx.fillStyle = "#654321";
   ctx.beginPath();
   ctx.moveTo(0, c.height);

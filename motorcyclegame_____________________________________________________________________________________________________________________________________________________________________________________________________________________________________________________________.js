@@ -80,6 +80,6 @@ function loop() {
   player.draw();
   requestAnimationFrame(loop);
 }
-onkeydown = (d) => (k[d.key] = 0);
+onkeydown = (d) => (k[d.key] = 1);
 onkeyup = (d) => (k[d.key] = 0);
 loop();
